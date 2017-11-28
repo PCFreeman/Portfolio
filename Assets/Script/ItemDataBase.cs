@@ -34,6 +34,7 @@ public class Item
     public int ID { get; set; }
     public string Title { get; set; }
     public int Value { get; set; }
+    public int Damage { get; set; }
 
     public Item(int id,string title,int value)
     {
