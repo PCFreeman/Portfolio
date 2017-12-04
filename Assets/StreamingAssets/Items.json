@@ -1,24 +1,30 @@
 [
   {
     "id": 0,
-    "title": "Swords",
+    "title": "Sword",
     "value": 6,
     "stats": {
       "damage": 5,
       "level": 1,
       "magic": 0
     },
-    "description": "A poor sword."
+    "description": "A poor sword.",
+    "slug": "sword",
+    "usable": false,
+    "stackable": false
   },
   {
     "id": 1,
-    "title": "Better Swords",
+    "title": "Better Sword",
     "value": 100,
     "stats": {
       "damage": 25,
       "level": 10,
       "magic": 20
     },
-    "description": "WUT."
+    "description": "WUT.",
+    "slug": "better_sword",
+    "usable": true,
+    "stackable": true
   }
 ]
