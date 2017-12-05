@@ -26,5 +26,19 @@
     "slug": "better_sword",
     "usable": true,
     "stackable": true
+  },
+  {
+    "id": 2,
+    "title": "Classic Sword",
+    "value": 200,
+    "stats": {
+      "damage": 34,
+      "level": 45,
+      "magic": 68
+    },
+    "description": "YEA.",
+    "slug": "classic_sword",
+    "usable": true,
+    "stackable": true
   }
 ]
