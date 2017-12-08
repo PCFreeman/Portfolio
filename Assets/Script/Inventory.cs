@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour {
 
+    public Text input;
     GameObject inventoryPanel;
     GameObject slotPanel;
     ItemDataBase database;
@@ -108,13 +109,24 @@ public class Inventory : MonoBehaviour {
                 itemObj.GetComponent<ItemData>().amount = 1;
                 itemObj.GetComponent<ItemData>().slot = i;
                 itemObj.transform.SetParent(slots[i].transform);
-                itemObj.transform.position = Vector2.zero;
-                itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
+                    itemObj.GetComponent<RectTransform>().offsetMin = new Vector2(0,0);
+                    itemObj.GetComponent<RectTransform>().offsetMax = new Vector2(0, 0);
+                    itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
                 itemObj.name = itemToAdd.Title;
                 break;
             }
         }
 }
+    }
+
+    public void Add()
+    {
+        AddItem(int.Parse(input.text));
+    }
+
+    public void Remove()
+    {
+       RemoveItem(int.Parse(input.text));
     }
 
     bool CheckIfinInventory(Item item)
