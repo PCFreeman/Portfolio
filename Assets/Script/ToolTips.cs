@@ -40,7 +40,8 @@ public class ToolTips : MonoBehaviour {
     {
         data = "<color=#0473f0><b>"+item.Title
             +"</b></color>\n\nValue"+item.Value
-            +"\nDamage:"+item.Damage
+            + "\nID:" + item.ID
+            + "\nDamage:"+item.Damage
             +"\nMagic Damage:"+item.Magic
             +"\nLevel:"+item.Level
             +"\nDescription:"+item.Description;
